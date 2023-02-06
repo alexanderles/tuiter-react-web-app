@@ -4,6 +4,10 @@ a {
     text-decoration: none;
 }
 
+.wd-top-padding-16 {
+    padding-top: 16px;
+}
+
 .wd-navigation-row {
     border-bottom: 2px solid rgb(47, 51, 54);
 }
