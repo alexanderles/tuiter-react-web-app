@@ -1,0 +1,117 @@
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.wd-navigation-row {
+    border-bottom: 2px solid rgb(47, 51, 54);
+}
+
+.wd-explore-spacer {
+    height: 10px;
+    width: 100%;
+    background: rgb(30, 31, 33);
+    border-bottom: 2px solid rgb(47, 51, 54);
+}
+
+.wd-search-row {
+    padding-left: 16px;
+}
+
+.wd-search-bar {
+    width: 80%;
+    height: 30px;
+    background: rgb(47, 51, 54);
+    border-radius: 15px;
+    padding-left: 40px;
+    padding-right: 15px;
+    float: left;
+}
+
+.wd-search-input {
+    background: rgb(47, 51, 54);
+    width: 100%;
+    height: 30px;
+    border:none;
+    outline-width: 0;
+    color: white;
+}
+
+.wd-settings-link {
+    float: right;
+    padding-top: 5px;
+    padding-right: 12px;
+    color: rgb(29,161,242);
+}
+
+.wd-explore-tab {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, serif;
+    float: left;
+    border-width: 4px;
+    padding: 16px;
+}
+
+.wd-selected-tab {
+    border-bottom: solid rgb(29, 161, 242);
+    color: rgb(29,161,242);
+    padding-bottom: 16px;
+}
+
+.wd-deselected-tab {
+    color: rgb(110, 118, 125);
+}
+
+.wd-suggested-post {
+    border-bottom: 1px solid rgb(47, 51, 54);
+    width: 100%;
+    float: left;
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-suggested-post-image {
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    margin: 16px;
+    float: right;
+}
+
+.wd-image-space {
+    width: 30%;
+    float: right;
+}
+
+.wd-text-space {
+    width: 70%;
+    float: left;
+}
+
+.wd-trending-topic {
+    font-size: 13px;
+    font-family: Arial, serif;
+    color: rgb(110, 118, 125);
+    padding: 10px 16px 8px;
+}
+
+.wd-trending-title {
+    color: white;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-weight: bold;
+    font-family: Arial, serif;
+    font-size: 17px;
+}
+
+.wd-color-white {
+    color: white;
+}

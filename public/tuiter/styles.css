@@ -1,0 +1,15 @@
+
+.wd-bg-black {
+    background: black;
+}
+
+.wd-page-grid {
+    margin-top: 8px;
+    border: 1px solid rgb(47, 51, 54);
+    padding-top: 16px;
+    display: grid;
+}
+
+.wd-float-done {
+    clear: both;
+}
