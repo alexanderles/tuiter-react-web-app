@@ -4,115 +4,479 @@
     <meta charset="UTF-8">
     <title>Explore</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+          crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          rel="stylesheet"/>
     <link href="index.css" rel="stylesheet">
     <link href="../styles.css" rel="stylesheet">
 </head>
-<body class="wd-bg-black">
-<div class="wd-page-grid wd-top-padding-16">
-    <div class="wd-navigation-row">
-        <div class="wd-search-row">
-            <div class="wd-search-bar">
-                <form id="search-explore">
-                    <label>
-                        <input type="search" class="wd-search-input" placeholder="Search Tuiter"/>
-                    </label><br/>
-                </form>
-            </div>
-            <div class="wd-settings-link">
-                <a href="explore-settings.html">
-                    <img src="settings-gear.png"
-                         height="20px" alt="Settings"/>
-                </a>
-            </div>
-            <div class="wd-float-done"></div>
-        </div>
-        <div class="wd-tabs-row">
-            <div class="wd-explore-tab">
-                <a class="wd-selected-tab" href="#">For you</a>
-            </div>
-            <div class="wd-explore-tab wd-deselected-tab">
-                <a href="#">Trending</a>
-            </div>
-            <div class="wd-explore-tab wd-deselected-tab">
-                <a href="#">COVID-19</a>
-            </div>
-            <div class="wd-explore-tab wd-deselected-tab">
-                <a href="#">News</a>
-            </div>
-            <div class="wd-explore-tab wd-deselected-tab">
-                <a href="#">Sports</a>
-            </div>
-            <div class="wd-explore-tab wd-deselected-tab">
-                <a href="#">Entertainment</a>
-            </div>
-        </div>
-    </div>
-    <div class="wd-explore-spacer"></div>
-    <div id="suggested-posts" class="wd-float-done">
-        <div class="wd-suggested-post">
-            <div class="wd-trending-topic">Trending in Science</div>
-            <div class="wd-trending-title">Starship</div>
-            <div class="wd-trending-topic">55.5K Tuits</div>
-        </div>
-        <div class="wd-suggested-post">
-            <div class="wd-trending-topic">Sports - Trending</div>
-            <div class="wd-trending-title">Tom Brady</div>
-            <div class="wd-trending-topic">101K Tuits</div>
-        </div>
-        <div class="wd-suggested-post">
-            <div class="wd-text-space">
-                <div class="wd-trending-topic wd-color-white wd-float-left">The New York Times</div>
-                <div class="wd-trending-topic">Yesterday</div>
-                <div class="wd-float-done"></div>
-                <div class="wd-trending-title">The Pentagon Saw a Warship Boondoggle. Congress Saw Jobs</div>
-            </div>
-            <div class="wd-image-space">
-                <img src="battleship.jpeg" class="wd-suggested-post-image" alt="Battle Ship"/>
-            </div>
-        </div>
-        <div class="wd-float-done"></div>
-        <div class="wd-suggested-post">
-            <div class="wd-text-space">
-                <div class="wd-trending-topic">MBTA Maintenance</div>
-                <div class="wd-float-done"></div>
-                <div class="wd-trending-title">MBTA: News and Updates for Boston, Massachusetts</div>
-            </div>
-            <div class="wd-image-space">
-                <img src="T.png" class="wd-suggested-post-image" alt="MBTA Logo"/>
-            </div>
-        </div>
-        <div class="wd-float-done"></div>
-        <div class="wd-suggested-post">
-            <div class="wd-text-space">
-                <div class="wd-trending-topic">COVID-19 LIVE</div>
-                <div class="wd-float-done"></div>
-                <div class="wd-trending-title">COVID-19: News and Updates for Boston, Massachusetts</div>
-            </div>
-            <div class="wd-image-space">
-                <img src="DPHLogo_Blue.jpg" class="wd-suggested-post-image" alt="MBTA Logo"/>
-            </div>
-        </div>
-        <div class="wd-float-done"></div>
-        <div class="wd-suggested-post">
-            <div class="wd-text-space">
-                <div class="wd-trending-topic wd-color-white wd-float-left">Bloomberg</div>
-                <div class="wd-trending-topic">Yesterday</div>
-                <div class="wd-float-done"></div>
-                <div class="wd-trending-title">iPhone Ultra of iPhone Fold Coming From Apple? CEO Remarks Offer Clues
+<body class="ms-5 me-5 mt-2 mb-3 row">
+<div class="col-2 col-sm-2 col-md-3 col-lg-1 col-xl-3 col-xxl-2">
+    <div class="list-group">
+        <a href="../tuits.html" class="list-group-item list-group-item-action">
+            <i class="fab fa-twitter ms-2"></i>
+        </a>
+        <a href="../explore/index.html" class="list-group-item list-group-item-action active">
+            <div class="row">
+                <div class="col-2">
+                    <i class="fa fa-hashtag ms-2"></i>
+                </div>
+                <div class="col-10 d-none d-xl-block tuiter-nav-item">
+                    Explore
                 </div>
             </div>
-            <div class="wd-image-space">
-                <img src="iphones.jpeg" class="wd-suggested-post-image" alt="iPones"/>
+        </a>
+        <a href="../home.html" class="list-group-item list-group-item-action">
+            <div class="row">
+                <div class="col-2">
+                    <i class="fa fa-bell ms-2"></i>
+                </div>
+                <div class="col-10 d-none d-xl-block tuiter-nav-item">
+                    Notifications
+                </div>
+            </div>
+        </a>
+        <a href="../messages.html" class="list-group-item list-group-item-action">
+            <div class="row">
+                <div class="col-2">
+                    <i class="fa fa-envelope ms-2"></i>
+                </div>
+                <div class="col-10 d-none d-xl-block tuiter-nav-item">
+                    Messages
+                </div>
+            </div>
+        </a>
+        <a href="../bookmarks/index.html" class="list-group-item list-group-item-action">
+            <div class="row">
+                <div class="col-2">
+                    <i class="fa fa-bookmark ms-2"></i>
+                </div>
+                <div class="col-10 d-none d-xl-block tuiter-nav-item">
+                    Bookmarks
+                </div>
+            </div>
+        </a>
+        <a href="../lists.html" class="list-group-item list-group-item-action">
+            <div class="row">
+                <div class="col-2">
+                    <i class="fa fa-list ms-2"></i>
+                </div>
+                <div class="col-10 d-none d-xl-block tuiter-nav-item">
+                    Lists
+                </div>
+            </div>
+        </a>
+        <a href="../profile.html" class="list-group-item list-group-item-action">
+            <div class="row">
+                <div class="col-2">
+                    <i class="fa fa-user ms-2"></i>
+                </div>
+                <div class="col-10 d-none d-xl-block tuiter-nav-item">
+                    Profile
+                </div>
+            </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+            <div class="row">
+                <div class="col-2">
+                    <span class="fa-stack" style="font-size: 10px">
+<i class="fas fa-circle fa-stack-1x" style="font-size: 20px"></i>
+<i class="fas fa-ellipsis-h fa-stack-1x fa-inverse" style="font-size: 10px"></i>
+</span>
+                </div>
+                <div class="col-10 d-none d-xl-block tuiter-nav-item">
+                    More
+                </div>
+            </div>
+        </a>
+    </div>
+    <button class="btn btn-primary mt-2 tuit col-12">
+        Tuit
+    </button>
+</div>
+
+<!--
+Center content column
+-->
+<div class="col-10 col-sm-10 col-md-9 col-lg-8 col-xl-6 col-xxl-7">
+
+    <!--
+    Search Bar
+    -->
+    <div class="row">
+        <div class="col-11">
+            <div class="input-group mb-2">
+            <span class="input-group-text bg-body search-border no-border-right">
+                <i class="fa fa-search"></i>
+            </span>
+                <input type="text" class="form-control search-border no-border-left" placeholder="Search Tuiter">
             </div>
         </div>
-        <div class="wd-float-done"></div>
-        <div class="wd-suggested-post">
-            <div class="wd-trending-topic">Cryptocurrencies - Trending</div>
-            <div class="wd-trending-title">Ethereum Merge</div>
-            <div class="wd-trending-topic">90K Tuits</div>
+        <div class="col-1">
+            <i class="fa fa-cog settings-cog"></i>
         </div>
     </div>
+
+    <!--
+    Topic Navigation
+    -->
+    <ul class="nav nav-tabs mb-2">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">For you</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Trending</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Sports</a>
+        </li>
+        <li class="nav-item d-none d-md-block">
+            <a class="nav-link disabled" href="#">Entertainment</a>
+        </li>
+    </ul>
+
+    <!--
+    Recommended content
+    -->
+    <div class="row">
+        <img src="../../images/starship.jpg" class="recommended-image"/>
+        <h2 class=" fw-bold recommended-image-label">SpaceX's Starship</h2>
+    </div>
+
+    <div class="list-group">
+        <div class="list-group-item">
+            <div class="row">
+                <div class="col-9">
+                    <div class="text-light-emphasis text-sm-start pt-1 ps-0">
+                        Web Development
+                    </div>
+                    <div>
+                        <span class="text-black fw-bold">ReactJS</span>
+                        <i class="fa fa-check-circle" style="font-size: 20px"></i>
+                        <span class="text-light-emphasis">- 2h</span>
+                    </div>
+                    <div class="text-sm-start text-black fw-bold">
+                        React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="../../images/react-logo.png" class="mx-auto d-block ten-rad-border" height="100px">
+                </div>
+            </div>
+        </div>
+
+        <div class="list-group-item">
+            <div class="row">
+                <div class="col-9">
+                    <div>
+                        <span class="text-black fw-bold">JavaScript</span>
+                        <i class="fa fa-check-circle" style="font-size: 20px"></i>
+                        <span class="text-light-emphasis">- 2h</span>
+                    </div>
+                    <div class="text-sm-start text-black fw-bold">
+                        JavaScript is a programming language that can run on browsers as well as desktops
+                    </div>
+                    <div class="text-light-emphasis text-sm-start pt-1 ps-0">
+                        123K Tuits
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="../../images/JavaScript-logo.png" class="mx-auto d-block ten-rad-border" height="100px">
+                </div>
+            </div>
+        </div>
+
+        <div class="list-group-item">
+            <div class="row">
+                <div class="col-9">
+                    <div class="text-light-emphasis text-sm-start pt-1 ps-0">
+                        Web Development
+                    </div>
+                    <div class="text-sm-start text-black fw-bold">
+                        jQuery
+                    </div>
+                    <div class="text-light-emphasis text-sm-start pt-1 ps-0">
+                        123K Tuits
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="../../images/jquery.png" class="mx-auto d-block ten-rad-border" height="100px">
+                </div>
+            </div>
+        </div>
+
+        <div class="list-group-item">
+            <div class="row">
+                <div class="col-9">
+                    <div class="text-light-emphasis text-sm-start pt-1 ps-0">
+                        Web Development
+                    </div>
+                    <div>
+                        <span class="text-black fw-bold">NodeJS</span>
+                        <i class="fa fa-check-circle" style="font-size: 20px"></i>
+                        <span class="text-light-emphasis">- 2h</span>
+                    </div>
+                    <div class="text-light-emphasis text-sm-start pt-1 ps-0">
+                        123K Tuits
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="../../images/nodejs-logo.png" class="mx-auto d-block ten-rad-border" height="100px">
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
+
+<!--
+Who to follow
+-->
+
+<div class="col-lg-3 col-xl-3 col-xxl-3">
+    <div class="list-group">
+        <div class="list-group-item">
+            <span class="fw-bold">Who to follow</span>
+        </div>
+        <div class="list-group-item">
+            <div class="row">
+                <div class="col-3 p-1">
+                    <img src="../../images/java-logo.png" class="profile-image">
+                </div>
+                <div class="col-4 p-0">
+                    <div>
+                        <span class="text-black fw-bold">Java</span>
+                        <i class="fa fa-check-circle" style="font-size: 20px"></i>
+                    </div>
+                    <div>
+                        @Java
+                    </div>
+                </div>
+                <div class="col-5 p-0">
+                    <div>
+                    <button class="btn btn-primary tuit mx-auto d-block">
+                        Follow
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-group-item">
+            <div class="row">
+                <div class="col-3 p-1">
+                    <img src="../../images/relativity-space-logo.jpg" class="profile-image">
+                </div>
+                <div class="col-4 p-0">
+                    <div>
+                        <span class="text-black fw-bold">Relativity Space</span>
+                        <i class="fa fa-check-circle" style="font-size: 20px"></i>
+                    </div>
+                    <div>
+                        @relativityspace
+                    </div>
+                </div>
+                <div class="col-5 p-0">
+                    <div>
+                        <button class="btn btn-primary tuit mx-auto d-block">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-group-item">
+            <div class="row">
+                <div class="col-3 p-1">
+                    <img src="../../images/Virgin-Red-logo.png" class="profile-image">
+                </div>
+                <div class="col-4 p-0">
+                    <div>
+                        <span class="text-black fw-bold">Virgin Galactic</span>
+                        <i class="fa fa-check-circle" style="font-size: 20px"></i>
+                    </div>
+                    <div>
+                        @virgingalactic
+                    </div>
+                </div>
+                <div class="col-5 p-0">
+                    <div>
+                        <button class="btn btn-primary tuit mx-auto d-block">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-group-item">
+            <div class="row">
+                <div class="col-3 p-1">
+                    <img src="../../images/NASA_logo.png" class="profile-image">
+                </div>
+                <div class="col-4 p-0">
+                    <div>
+                        <span class="text-black fw-bold">NASA</span>
+                        <i class="fa fa-check-circle" style="font-size: 20px"></i>
+                    </div>
+                    <div>
+                        @NASA
+                    </div>
+                </div>
+                <div class="col-5 p-0">
+                    <div>
+                        <button class="btn btn-primary tuit mx-auto d-block">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-group-item">
+            <div class="row">
+                <div class="col-3 p-1">
+                    <img src="../../images/Tesla_T_symbol.svg.png" class="profile-image">
+                </div>
+                <div class="col-4 p-0">
+                    <div>
+                        <span class="text-black fw-bold">Tesla</span>
+                        <i class="fa fa-check-circle" style="font-size: 20px"></i>
+                    </div>
+                    <div>
+                        @tesla
+                    </div>
+                </div>
+                <div class="col-5 p-0">
+                    <div>
+                        <button class="btn btn-primary tuit mx-auto d-block">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+class="col-10 col-sm-10 col-md-9 col-lg-8 col-xl-6 col-xxl-7"
+class="col-2 col-sm-2 col-md-3 col-lg-1 col-xl-3 col-xxl-2"
+
+    <!--
+    <div class="wd-page-grid wd-top-padding-16">
+        <div class="wd-navigation-row">
+            <div class="wd-search-row">
+                <div class="wd-search-bar">
+                    <form id="search-explore">
+                        <label>
+                            <input type="search" class="wd-search-input" placeholder="Search Tuiter"/>
+                        </label><br/>
+                    </form>
+                </div>
+                <div class="wd-settings-link">
+                    <a href="explore-settings.html">
+                        <img src="settings-gear.png"
+                             height="20px" alt="Settings"/>
+                    </a>
+                </div>
+                <div class="wd-float-done"></div>
+            </div>
+            <div class="wd-tabs-row">
+                <div class="wd-explore-tab">
+                    <a class="wd-selected-tab" href="#">For you</a>
+                </div>
+                <div class="wd-explore-tab wd-deselected-tab">
+                    <a href="#">Trending</a>
+                </div>
+                <div class="wd-explore-tab wd-deselected-tab">
+                    <a href="#">COVID-19</a>
+                </div>
+                <div class="wd-explore-tab wd-deselected-tab">
+                    <a href="#">News</a>
+                </div>
+                <div class="wd-explore-tab wd-deselected-tab">
+                    <a href="#">Sports</a>
+                </div>
+                <div class="wd-explore-tab wd-deselected-tab">
+                    <a href="#">Entertainment</a>
+                </div>
+            </div>
+        </div>
+        <div class="wd-explore-spacer"></div>
+        <div id="suggested-posts" class="wd-float-done">
+            <div class="wd-suggested-post">
+                <div class="wd-trending-topic">Trending in Science</div>
+                <div class="wd-trending-title">Starship</div>
+                <div class="wd-trending-topic">55.5K Tuits</div>
+            </div>
+            <div class="wd-suggested-post">
+                <div class="wd-trending-topic">Sports - Trending</div>
+                <div class="wd-trending-title">Tom Brady</div>
+                <div class="wd-trending-topic">101K Tuits</div>
+            </div>
+            <div class="wd-suggested-post">
+                <div class="wd-text-space">
+                    <div class="wd-trending-topic wd-color-white wd-float-left">The New York Times</div>
+                    <div class="wd-trending-topic">Yesterday</div>
+                    <div class="wd-float-done"></div>
+                    <div class="wd-trending-title">The Pentagon Saw a Warship Boondoggle. Congress Saw Jobs</div>
+                </div>
+                <div class="wd-image-space">
+                    <img src="battleship.jpeg" class="wd-suggested-post-image" alt="Battle Ship"/>
+                </div>
+            </div>
+            <div class="wd-float-done"></div>
+            <div class="wd-suggested-post">
+                <div class="wd-text-space">
+                    <div class="wd-trending-topic">MBTA Maintenance</div>
+                    <div class="wd-float-done"></div>
+                    <div class="wd-trending-title">MBTA: News and Updates for Boston, Massachusetts</div>
+                </div>
+                <div class="wd-image-space">
+                    <img src="T.png" class="wd-suggested-post-image" alt="MBTA Logo"/>
+                </div>
+            </div>
+            <div class="wd-float-done"></div>
+            <div class="wd-suggested-post">
+                <div class="wd-text-space">
+                    <div class="wd-trending-topic">COVID-19 LIVE</div>
+                    <div class="wd-float-done"></div>
+                    <div class="wd-trending-title">COVID-19: News and Updates for Boston, Massachusetts</div>
+                </div>
+                <div class="wd-image-space">
+                    <img src="DPHLogo_Blue.jpg" class="wd-suggested-post-image" alt="MBTA Logo"/>
+                </div>
+            </div>
+            <div class="wd-float-done"></div>
+            <div class="wd-suggested-post">
+                <div class="wd-text-space">
+                    <div class="wd-trending-topic wd-color-white wd-float-left">Bloomberg</div>
+                    <div class="wd-trending-topic">Yesterday</div>
+                    <div class="wd-float-done"></div>
+                    <div class="wd-trending-title">iPhone Ultra of iPhone Fold Coming From Apple? CEO Remarks Offer Clues
+                    </div>
+                </div>
+                <div class="wd-image-space">
+                    <img src="iphones.jpeg" class="wd-suggested-post-image" alt="iPones"/>
+                </div>
+            </div>
+            <div class="wd-float-done"></div>
+            <div class="wd-suggested-post">
+                <div class="wd-trending-topic">Cryptocurrencies - Trending</div>
+                <div class="wd-trending-title">Ethereum Merge</div>
+                <div class="wd-trending-topic">90K Tuits</div>
+            </div>
+        </div>
+    </div>
+    -->
 
 </body>
 </html>

@@ -119,3 +119,53 @@ a {
 .wd-color-white {
     color: white;
 }
+
+.btn-primary.tuit {
+    border-radius: 20px;
+}
+
+.tuiter-nav-item {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.search-border {
+    border-radius: 20px;
+}
+
+.ten-rad-border {
+    border-radius: 10px;
+}
+
+.no-border-right {
+    border-right: 0;
+}
+
+.no-border-left {
+    border-left: 0;
+}
+
+.settings-cog {
+    color: dodgerblue;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.recommended-image {
+    width: 100%;
+    z-index: 0;
+}
+
+.recommended-image-label {
+    position: absolute;
+    top: 430px;
+    left: 350px;
+    color: white;
+    size: 50px;
+}
+
+.profile-image {
+    border-radius: 20px;
+    height: 40px;
+}
+
