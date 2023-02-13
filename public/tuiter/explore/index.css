@@ -157,11 +157,13 @@ a {
 }
 
 .recommended-image-label {
-    position: absolute;
-    top: 430px;
-    left: 350px;
+    position: relative;
+    top: -50px;
+    left: 10px;
     color: white;
     size: 50px;
+    z-index: 1;
+    height: 0;
 }
 
 .profile-image {
