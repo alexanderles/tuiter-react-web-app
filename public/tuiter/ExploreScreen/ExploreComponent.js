@@ -35,7 +35,7 @@ const ExploreComponent = () => {
            
            <div class="row">
                 <img src="../../images/starship.jpg" class="recommended-image"/>
-                <h2 class="fw-bold recommended-image-label">SpaceX's Starship</h2>
+                <h2 class="fw-bold text-white recommended-image-label">SpaceX's Starship</h2>
            </div>
            
            ${PostSummaryList()}
