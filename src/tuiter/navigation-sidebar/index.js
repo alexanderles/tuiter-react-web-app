@@ -15,7 +15,7 @@ import {faTwitter} from "@fortawesome/free-brands-svg-icons";
 const NavigationSidebar = ({active = 'explore'}) => {
     return (
         <div className="list-group">
-            <a className="list-group-item">
+            <a href="/" className="list-group-item">
                 <FontAwesomeIcon icon={faTwitter}/>
             </a>
             <a className={`list-group-item ${active === 'home'?'active':''}`}>
@@ -28,7 +28,7 @@ const NavigationSidebar = ({active = 'explore'}) => {
                     </div>
                 </div>
             </a>
-            <a className={`list-group-item ${active === 'explore'?'active':''}`}>
+            <a href="/" className={`list-group-item ${active === 'explore'?'active':''}`}>
                 <div className="row">
                     <div className="col-2">
                         <FontAwesomeIcon icon={faHashtag} />
@@ -38,7 +38,7 @@ const NavigationSidebar = ({active = 'explore'}) => {
                     </div>
                 </div>
             </a>
-            <a className={`list-group-item ${active === 'notifications'?'active':''}`}>
+            <a href="/" className={`list-group-item ${active === 'notifications'?'active':''}`}>
                 <div className="row">
                     <div className="col-2">
                         <FontAwesomeIcon icon={faBell} />
@@ -48,7 +48,7 @@ const NavigationSidebar = ({active = 'explore'}) => {
                     </div>
                 </div>
             </a>
-            <a className={`list-group-item ${active === 'messages'?'active':''}`}>
+            <a href="/" className={`list-group-item ${active === 'messages'?'active':''}`}>
                 <div className="row">
                     <div className="col-2">
                         <FontAwesomeIcon icon={faEnvelope} />
@@ -58,7 +58,7 @@ const NavigationSidebar = ({active = 'explore'}) => {
                     </div>
                 </div>
             </a>
-            <a className={`list-group-item ${active === 'bookmarks'?'active':''}`}>
+            <a href="/" className={`list-group-item ${active === 'bookmarks'?'active':''}`}>
                 <div className="row">
                     <div className="col-2">
                         <FontAwesomeIcon icon={faBookmark} />
@@ -68,7 +68,7 @@ const NavigationSidebar = ({active = 'explore'}) => {
                     </div>
                 </div>
             </a>
-            <a className={`list-group-item ${active === 'lists'?'active':''}`}>
+            <a href="/" className={`list-group-item ${active === 'lists'?'active':''}`}>
                 <div className="row">
                     <div className="col-2">
                         <FontAwesomeIcon icon={faList} />
@@ -78,7 +78,7 @@ const NavigationSidebar = ({active = 'explore'}) => {
                     </div>
                 </div>
             </a>
-            <a className={`list-group-item ${active === 'profile'?'active':''}`}>
+            <a href="/" className={`list-group-item ${active === 'profile'?'active':''}`}>
                 <div className="row">
                     <div className="col-2">
                         <FontAwesomeIcon icon={faUser} />
@@ -88,7 +88,7 @@ const NavigationSidebar = ({active = 'explore'}) => {
                     </div>
                 </div>
             </a>
-            <a className={`list-group-item ${active === 'more'?'active':''}`}>
+            <a href="/" className={`list-group-item ${active === 'more'?'active':''}`}>
                 <div className="row">
                     <div className="col-2">
                         <FontAwesomeIcon icon={faEllipsisH} />
