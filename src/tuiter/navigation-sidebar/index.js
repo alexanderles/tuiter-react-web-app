@@ -18,7 +18,7 @@ const NavigationSidebar = ({active = 'explore'}) => {
             <a href="/" className="list-group-item">
                 <FontAwesomeIcon icon={faTwitter}/>
             </a>
-            <a className={`list-group-item ${active === 'home'?'active':''}`}>
+            <a href="/" className={`list-group-item ${active === 'home'?'active':''}`}>
                 <div className="row">
                     <div className="col-2">
                         <FontAwesomeIcon icon={faHome} />
