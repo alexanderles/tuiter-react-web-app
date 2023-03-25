@@ -3,6 +3,7 @@ import PostSummaryList from "../post-summary-list";
 import "./index.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGear, faSearch} from "@fortawesome/free-solid-svg-icons";
+import {Link} from "react-router-dom";
 const ExploreComponent = () => {
     return(
         <>
@@ -20,19 +21,19 @@ const ExploreComponent = () => {
             </div>
             <ul className="nav nav-pills mb-2">
                 <li className="nav-item">
-                    <a href="/" className="nav-link active">For You</a>
+                    <Link to="/tuiter/explore" className="nav-link active">For You</Link>
                 </li>
                 <li className="nav-item">
-                    <a href="/" className="nav-link">Trending</a>
+                    <Link to="/tuiter/explore" className="nav-link">Trending</Link>
                 </li>
                 <li className="nav-item">
-                    <a href="/" className="nav-link">News</a>
+                    <Link to="/tuiter/explore" className="nav-link">News</Link>
                 </li>
                 <li className="nav-item">
-                    <a href="/" className="nav-link">Sports</a>
+                    <Link to="/tuiter/explore" className="nav-link">Sports</Link>
                 </li>
                 <li className="nav-item">
-                    <a href="/" className="nav-link">Entertainment</a>
+                    <Link to="/tuiter/explore" className="nav-link">Entertainment</Link>
                 </li>
             </ul>
             <div className="position-relative mb-2">

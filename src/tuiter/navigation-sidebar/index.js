@@ -12,14 +12,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import {faTwitter} from "@fortawesome/free-brands-svg-icons";
 import {Link} from "react-router-dom";
-// TODO: Use Links!!
-const NavigationSidebar = ({active = 'home'}) => {
+const NavigationSidebar = ({active = '/tuiter'}) => {
     return (
         <div className="list-group">
             <Link to="/tuiter" className="list-group-item">
                 <FontAwesomeIcon icon={faTwitter}/>
             </Link>
-            <Link to="/tuiter" className={`list-group-item ${active === 'home'?'active':''}`}>
+            <Link to="/tuiter" className={`list-group-item ${active === '/tuiter'?'active':''}`}>
                 <div className="row">
                     <div className="col-2">
                         <FontAwesomeIcon icon={faHome} />
@@ -29,7 +28,7 @@ const NavigationSidebar = ({active = 'home'}) => {
                     </div>
                 </div>
             </Link>
-            <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore'?'active':''}`}>
+            <Link to="/tuiter/explore" className={`list-group-item ${active === '/tuiter/explore'?'active':''}`}>
                 <div className="row">
                     <div className="col-2">
                         <FontAwesomeIcon icon={faHashtag} />
@@ -39,7 +38,7 @@ const NavigationSidebar = ({active = 'home'}) => {
                     </div>
                 </div>
             </Link>
-            <Link to="/" className={`list-group-item ${active === 'labs'?'active':''}`}>
+            <Link to="/" className={`list-group-item ${active === '/tuiter/labs'?'active':''}`}>
                 <div className="row">
                     <div className="col-2">
                         <FontAwesomeIcon icon={faFlask} />
@@ -49,7 +48,7 @@ const NavigationSidebar = ({active = 'home'}) => {
                     </div>
                 </div>
             </Link>
-            <Link to="/" className={`list-group-item ${active === 'notifications'?'active':''}`}>
+            <Link to="/" className={`list-group-item ${active === '/tuiter/notifications'?'active':''}`}>
                 <div className="row">
                     <div className="col-2">
                         <FontAwesomeIcon icon={faBell} />
@@ -59,7 +58,7 @@ const NavigationSidebar = ({active = 'home'}) => {
                     </div>
                 </div>
             </Link>
-            <Link to="/" className={`list-group-item ${active === 'messages'?'active':''}`}>
+            <Link to="/" className={`list-group-item ${active === '/tuiter/messages'?'active':''}`}>
                 <div className="row">
                     <div className="col-2">
                         <FontAwesomeIcon icon={faEnvelope} />
@@ -69,7 +68,7 @@ const NavigationSidebar = ({active = 'home'}) => {
                     </div>
                 </div>
             </Link>
-            <Link to="/" className={`list-group-item ${active === 'bookmarks'?'active':''}`}>
+            <Link to="/" className={`list-group-item ${active === '/tuiter/bookmarks'?'active':''}`}>
                 <div className="row">
                     <div className="col-2">
                         <FontAwesomeIcon icon={faBookmark} />
@@ -79,7 +78,7 @@ const NavigationSidebar = ({active = 'home'}) => {
                     </div>
                 </div>
             </Link>
-            <Link to="/" className={`list-group-item ${active === 'lists'?'active':''}`}>
+            <Link to="/" className={`list-group-item ${active === '/tuiter/lists'?'active':''}`}>
                 <div className="row">
                     <div className="col-2">
                         <FontAwesomeIcon icon={faList} />
@@ -89,7 +88,7 @@ const NavigationSidebar = ({active = 'home'}) => {
                     </div>
                 </div>
             </Link>
-            <Link to="/" className={`list-group-item ${active === 'profile'?'active':''}`}>
+            <Link to="/" className={`list-group-item ${active === '/tuiter/profile'?'active':''}`}>
                 <div className="row">
                     <div className="col-2">
                         <FontAwesomeIcon icon={faUser} />
@@ -99,7 +98,7 @@ const NavigationSidebar = ({active = 'home'}) => {
                     </div>
                 </div>
             </Link>
-            <Link to="/" className={`list-group-item ${active === 'more'?'active':''}`}>
+            <Link to="/" className={`list-group-item ${active === '/tuiter/more'?'active':''}`}>
                 <div className="row">
                     <div className="col-2">
                         <FontAwesomeIcon icon={faEllipsisH} />
