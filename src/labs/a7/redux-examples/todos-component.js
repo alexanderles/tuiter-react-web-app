@@ -16,7 +16,6 @@ const Todos = () => {
         dispatch(todoDoneToggle(todo))
     }
 
-
     const todoChangeHandler = (event) => {
         const doValue = event.target.value;
         const newTodo = {
