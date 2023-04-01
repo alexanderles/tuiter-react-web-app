@@ -10,7 +10,11 @@ import HomeComponent from "./home";
 import {Route, Routes, useLocation} from "react-router";
 
 const store = configureStore({
-    reducer: {who: whoReducer, tuits: tuitsReducer}});
+    reducer: {
+        who: whoReducer,
+        tuitsData: tuitsReducer
+    }
+});
 
 function Tuiter() {
     const location = useLocation();
