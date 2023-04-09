@@ -9,7 +9,7 @@ const WhatsHappening = () => {
         const newTuit = {
             userName: "NASA",
             image: "nasa.png",
-            handle: "@spacex",
+            handle: "@nasa",
             time: "Just now",
             tuit: whatsHappening
         }
